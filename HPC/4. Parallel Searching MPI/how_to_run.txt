@@ -1,0 +1,3 @@
+mpicc filename.c -o outputfilename -lm
+
+mpirun -np [# of process] outputfilename

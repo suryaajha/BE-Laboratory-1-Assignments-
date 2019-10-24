@@ -35,7 +35,7 @@ int breath_first_search(int *tree, int tos, int start_node_idx, int end_node_idx
 
 	while(queue[q_ptr] != -1 && q_ptr < N){
 		if(queue[q_ptr] == tos)
-			return q_ptr;
+			return q_ptr ;
 		// printf("%d\n", queue[q_ptr]);
 		int left_ptr = 2 * q_ptr + 1 ; 
 		int right_ptr = 2 * q_ptr + 2 ; 
@@ -56,7 +56,7 @@ int main(int argc, char const *argv[]){
 
 	int *tree ; 
 	int N = 1000 ; 
-	int tos = 500 ; 
+	int tos = 999 ; 
 
 	tree = (int*) malloc(N * sizeof(int)) ; 
 
